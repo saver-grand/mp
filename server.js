@@ -6,7 +6,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 // Your DASH source (with license already handled by ffmpeg if supported)
-const HBO_SIGNATURE_SRC = "https://qp-pldt-live-grp-01-prod.akamaized.net/out/u/cg_hbosign.mpd";
+const HBO_SIGNATURE_SRC = "https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01006-abs-cbn-abscbn-gma-x7-dash-abscbnono/7c693236-e0c1-40a3-8bd0-bb25e43f5bfc/index.mpd";
 
 // Route to serve HLS playlist
 app.get("/hbosignature/playlist.m3u8", (req, res) => {
